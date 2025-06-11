@@ -27,7 +27,7 @@ RPGのゲームとして成立していればなんでもありです．
 2. 右側の"Codespaces"を選択
 3. codespacesの"+"（Create a codespace on main）をクリック
 
-![alt text](image-1.png)
+![alt text](image.png)
 
 ## コミット・プッシュ・プルリクエストについて
 コミットおよびプッシュ（コード変更）は **必ずブランチを作成してから** 行ってください
