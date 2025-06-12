@@ -20,7 +20,7 @@ public class Sorcerer extends AbstractSuperHero{
 		AbstractCharacter [] members = targets.getMembers();
 		for(AbstractCharacter member: members) {
 			int damage = member.gotDamage(randomAttack);
-			System.out.println(super.getName() + "ヴォルザンベル，" + member.getName() + "に" + damage + "のダメージ");
+			System.out.println(super.getName() + "マジックショット！！  " + member.getName() + "に" + damage + "のダメージ");
 		}
 		return true;
 	}
