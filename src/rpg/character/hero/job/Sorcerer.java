@@ -22,6 +22,7 @@ public class Sorcerer extends AbstractSuperHero{
 			int damage = member.gotDamage(randomAttack);
 			System.out.println(super.getName() + "マジックショット！！  " + member.getName() + "に" + damage + "のダメージ");
 		}
+		System.out.println();
 		return true;
 	}
 }
