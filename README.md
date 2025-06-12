@@ -46,6 +46,7 @@ javac -d bin src/**/*.java
 javac -d bin -sourcepath src src/Main.java
 ```
 
+コンパイルすることで，コードを実行できるようになったので，以下のように実行してみましょう．
 ```
 //コンパイルされたコードを実行
 java -cp bin Main
