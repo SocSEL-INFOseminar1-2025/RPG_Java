@@ -18,11 +18,12 @@ public class Warrior extends AbstractSuperHero{
 		}
 		Random random = new Random();
 		int randomAttack = random.nextInt(super.getAttack()) + super.getAttack();
-		if(targetCharacter.getName().equals("ドラゴン")) {  //ドラゴンに対して，攻撃に補正がかかる
+		if(targetCharacter.getName().equals("Dragon")) {  //ドラゴンに対して，攻撃に補正がかかる
 			randomAttack += 30;
 		}
 		int damage = targetCharacter.gotDamage(randomAttack);
-		System.out.println(super.getName() + "のドラゴンキック, " + targetCharacter.getName() + "に" + damage + "のダメージ");
+		System.out.println(super.getName() + "のHAPPY BANG!!  " + targetCharacter.getName() + "に" + damage + "のダメージ");
+		System.out.println(); //レイアウト調整のための改行
 		return true;
 	}
 }

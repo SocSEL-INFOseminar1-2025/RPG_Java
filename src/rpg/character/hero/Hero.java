@@ -39,10 +39,10 @@ public class Hero extends AbstractCharacter {
 			if(this instanceof Specialist) {
 				Specialist specialist = (Specialist) this;
 				while(true) {
-					if(this.getJob().equals("Sorcer")) {
+					if(this.getJob().equals("Priest")) {
 						if(specialist.special(allies));
 						break;
-					}else {
+					}else if(this.getJob().equals("戦士") || this.getJob().equals("魔法使い")){
 						if(specialist.special(enemies));
 						break;
 					}
@@ -54,6 +54,7 @@ public class Hero extends AbstractCharacter {
 	}
 	
 	public String getJob() {
+		String name_Job = this.job;
 		return this.job;
 	}
 	
