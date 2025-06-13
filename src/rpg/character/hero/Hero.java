@@ -38,7 +38,15 @@ public class Hero extends AbstractCharacter {
 		}else if(command == 3) {  //必殺技
 			if(this instanceof Specialist) {
 				Specialist specialist = (Specialist) this;
-				specialist.special(enemies);
+				while(true) {
+					if(this.getJob().equals("Sorcer")) {
+						if(specialist.special(allies));
+						break;
+					}else {
+						if(specialist.special(enemies));
+						break;
+					}
+				}
 			}
 		}else {
 			this.command(allies, enemies);
