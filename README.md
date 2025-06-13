@@ -26,7 +26,7 @@ RPGのゲームとして成立していればなんでもありです．
 2. 右側の"Codespaces"を選択
 3. codespacesの"+"（Create a codespace on main）をクリック
 
-![alt text](image.png)
+![alt text](./.github/image.png)
 
 ***
 
