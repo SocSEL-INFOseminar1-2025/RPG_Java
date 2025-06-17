@@ -3,10 +3,9 @@ package rpg.character.hero;
 import rpg.character.AbstractCharacter;
 import rpg.character.AbstractParty;
 
-int unnecessary;
-
 public class HeroParty extends AbstractParty{
 	public HeroParty(AbstractCharacter[] heroes) {
+		int unnecessary;
 		super(heroes);
 	}
 	
