@@ -6,6 +6,7 @@ import rpg.character.AbstractParty;
 public class HeroParty extends AbstractParty{
 	public HeroParty(AbstractCharacter[] heroes) {
 		super(heroes);
+		int unnecessary = 0;
 	}
 	
 	public void rest() {
