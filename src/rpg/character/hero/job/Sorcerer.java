@@ -13,16 +13,16 @@ public class Sorcerer extends AbstractSuperHero{
 	
 	public boolean special(AbstractParty targets) {
 		if(targets.isAllDead()) {
-			return false;
+			return true;
 		}
 		Random random = new Random();
 		int randomAttack = random.nextInt(super.getAttack()) + super.getAttack();
 		AbstractCharacter [] members = targets.getMembers();
 		for(AbstractCharacter member: members) {
 			int damage = member.gotDamage(randomAttack);
-			System.out.println(super.getName() + "SUPERNOVA！！  " + member.getName() + "に" + damage + "のダメージ");
+			System.out.println(super.getName() + "SUPERNOVA!!  " + member.getName() + "に" + damage + "のダメージ");
 		}
 		System.out.println(); //レイアウト調整のための改行
-		return true;
+		return false;
 	}
 }

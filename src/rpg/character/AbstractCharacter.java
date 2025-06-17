@@ -28,7 +28,7 @@ public abstract class AbstractCharacter {
 		return this.hp;
 	}
 	
-	public void setHp(int hp) {  //キングデーモンに回復させるためにpublicへ変更
+	public void setHp(int hp) {  // HPの最大値をちょいちょいいじるので，publicへ変更
 		this.hp = hp;
 	}
 	

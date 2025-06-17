@@ -3,6 +3,8 @@ package rpg.character.hero;
 import rpg.character.AbstractCharacter;
 import rpg.character.AbstractParty;
 
+int unnecessary;
+
 public class HeroParty extends AbstractParty{
 	public HeroParty(AbstractCharacter[] heroes) {
 		super(heroes);
@@ -26,7 +28,7 @@ public class HeroParty extends AbstractParty{
 				System.out.println(hero.getName() + "(" + hero.getJob() + "):逃亡 ");
 			}
 		}
-		System.out.println();
+		System.out.println();  //レイアウト調整のための改行
 	}
 	
 	private void printPartyStatus(Hero hero) {
@@ -40,7 +42,7 @@ public class HeroParty extends AbstractParty{
 				System.out.println(hero.getName() + "(" + hero.getJob() + "):逃亡 ");
 			}
 		}
-		System.out.println();
+		System.out.println();  //レイアウト調整のための改行
 	}
 	
 	public boolean isEscapeAll() {
