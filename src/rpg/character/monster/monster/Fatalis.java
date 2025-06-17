@@ -33,16 +33,6 @@ public class Fatalis extends BossMonster{
 				hero.actionStatus();
 			}
 			return true;
-		}else if(specialType == 2){
-			System.out.println(super.getName() + "のシュガーラッシュ!! 全てのHP上限を半減!!");
-			AbstractCharacter [] heroes = enemies.getMembers();
-			for(AbstractCharacter hero: heroes) {
-				int randomAttack = random.nextInt(super.getAttack()) + 40;
-				int damage = hero.gotDamage(randomAttack);
-				System.out.println(hero.getName() + "に" + damage + "のダメージ");
-				hero.actionStatus();
-			}
-			return true;
 		}
 	}
 }
