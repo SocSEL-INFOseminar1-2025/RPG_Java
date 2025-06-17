@@ -32,7 +32,7 @@ public class HeroParty extends AbstractParty{
 	
 	private void printPartyStatus(Hero hero) {
 		for(AbstractCharacter member: super.getMembers()) {
-			Hero hero = (Hero) member;
+			Hero heroes = (Hero) member;
 			if(hero.getHp() > 0  && !hero.isEscaped()) {
 				System.out.print(hero.getName() + ")" + hero.getJob() + "(;" + hero.getHp() + " ");
 			}else if(member.isEscaped()) {
