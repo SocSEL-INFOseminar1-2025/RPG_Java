@@ -15,7 +15,7 @@ public class KingDemon extends BossMonster{
 		System.out.println(super.getName() + "のギガドレイン，勇者全員から体力を吸い取った");
 		AbstractCharacter [] heroes = enemies.getMembers();
 		for(AbstractCharacter hero: heroes) {
-			int randomAttack = random.nextInt(super.getAttack()) + super.getAttack();
+			int randomAttack = (random.nextInt(super.getAttack()) + super.getAttack()) * (-1);
 			int damage = hero.gotDamage(randomAttack);
 			System.out.println(hero.getName() + "に" + damage + "のダメージ");
 			super.setHp(super.gotHeal(damage));

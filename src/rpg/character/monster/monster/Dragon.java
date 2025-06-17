@@ -12,7 +12,7 @@ public class Dragon extends BossMonster{
 	
 	public boolean special(AbstractParty enemies) {
 		Random random = new Random();
-		System.out.println(super.getName() + "の竜のいぶき，勇者全員に激しい嵐が襲いかかる");
+		System.out.println(super.getName() + "のドラゴンファイア，勇者全員に激しい嵐が襲いかかる");
 		AbstractCharacter [] heroes = enemies.getMembers();
 		for(AbstractCharacter hero: heroes) {
 			int randomAttack = random.nextInt(super.getAttack()) + super.getAttack();
