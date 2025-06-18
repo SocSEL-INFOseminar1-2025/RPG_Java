@@ -3,7 +3,7 @@ name: Bug report
 about: Create a report to help us improve
 title: バグ報告内容 [報告者名]
 labels: bug
-assignees: OTOYO1020
+assignees: shoei03, kzk03, OTOYO1020
 
 ---
 
