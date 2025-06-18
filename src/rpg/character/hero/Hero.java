@@ -77,6 +77,7 @@ public class Hero extends AbstractCharacter {
 				return selectTarget(targets);
 			}
 		} else {
+			System.out.println("正しい数字を入力してください");
 			return selectTarget(targets);
 		}
 	}
