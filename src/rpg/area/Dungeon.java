@@ -45,7 +45,7 @@ public abstract class Dungeon extends Area{
 	public String explore(HeroParty party) {
 		String result;
 		while (true) {
-			//this.printExplore();  トコトコって出力する演出部分
+			this.printExplore();  トコトコって出力する演出部分
 			//Random random = new Random();
 			//int randomNum = random.nextInt(5);  //これ何？ 2割の確率でボスと戦えるみたいな仕様だった?
 			if(this.encountCounter >= 3) {
@@ -66,6 +66,18 @@ public abstract class Dungeon extends Area{
 	
 	public void printArea() {
 		System.out.println("現在の場所は" + super.getName() + "地下" + this.floorNum + "階です．" );
+	}
+
+	public void printExplore(){
+		for(int i=0; i<3; i++){
+			System.out.print("トコ...");
+			try{
+				Thread.sleep(1000); //1秒待ってプリント出力
+			} catch(InterruptedException e){
+				e.printStackTrace();
+			}
+		}
+		System.out.println(); //視認性向上を図る改行
 	}
 	
 	private String encountMob(HeroParty party) {
