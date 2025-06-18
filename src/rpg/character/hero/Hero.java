@@ -64,7 +64,7 @@ public class Hero extends AbstractCharacter {
 		int numPartyMember = enemies.length;
 		for(int i = 0; i < numPartyMember; i++) {
 			AbstractCharacter enemy = enemies[i];
-			if(!enemy.isDead() || !enemy.isEscaped()) {
+			if(!enemy.isDead() && !enemy.isEscaped()) {
 				System.out.println(i + ":" + enemy.getName());
 			}
 		}
