@@ -45,7 +45,7 @@ public abstract class Dungeon extends Area{
 	public String explore(HeroParty party) {
 		String result;
 		while (true) {
-			this.printExplore();  トコトコって出力する演出部分
+			this.printExplore();
 			//Random random = new Random();
 			//int randomNum = random.nextInt(5);  //これ何？ 2割の確率でボスと戦えるみたいな仕様だった?
 			if(this.encountCounter >= 3) {
