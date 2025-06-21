@@ -12,7 +12,7 @@ public class Fatalis extends BossMonster{
 	
 	public boolean special(AbstractParty enemies) {
 		Random random = new Random();
-		int specialType = random.nextInt(2);  //ラスボスなので２種類の必殺技を実装
+		int specialType = random.nextInt(3);  // 0,1,2が入力されるように修正
 		if(specialType == 0){
 			System.out.println(super.getName() + "の溶岩バケツ!! 全ての勇者を焼き払う");
 			AbstractCharacter [] heroes = enemies.getMembers();
