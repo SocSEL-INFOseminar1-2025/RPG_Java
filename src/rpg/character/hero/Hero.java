@@ -49,7 +49,6 @@ public class Hero extends AbstractCharacter {
 				}
 			}
 		}else {
-			System.out.println("正しい数字を入力してください");//再入力を求める際に適切なログを表示する。
 			this.command(allies, enemies);
 		}
 	}
