@@ -24,6 +24,8 @@ public class Hotel extends Area{
 			System.out.println("1:休息する　2:はじまりの町へ戻る");
 			int nextMove = ScanCommand.scan();
 			if (nextMove == 1) {
+				System.out.println("勇者たちは"+getName()+"に泊まった!元気いっぱい!");
+				System.out.println("");
 				this.rest(party);
 			}
 			Town town = new Town();
