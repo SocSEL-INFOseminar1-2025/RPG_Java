@@ -39,7 +39,7 @@ public class Hero extends AbstractCharacter {
 			if(this instanceof Specialist) {
 				Specialist specialist = (Specialist) this;
 				while(true) {
-					if(this.getJob().equals("Priest")) {
+					if(this.getJob().equals("僧侶")) {
 						if(specialist.special(allies));
 						break;
 					}else if(this.getJob().equals("戦士") || this.getJob().equals("魔法使い")){
