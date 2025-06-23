@@ -89,7 +89,7 @@ public abstract class AbstractCharacter {
 	}
 	
 	public boolean isEscaped() {
-		return false;
+		return this.escaped;
 	}
 	
 	public void init() {

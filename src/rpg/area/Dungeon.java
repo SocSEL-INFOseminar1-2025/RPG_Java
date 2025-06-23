@@ -59,7 +59,9 @@ public abstract class Dungeon extends Area{
 				if(result.equals("LOSE")){
 					return result;
 				}
-				this.encountCounter++;
+				else if(!result.equals("ESCAPE")){
+					this.encountCounter++;
+				}
 			} 
 		}
 	}

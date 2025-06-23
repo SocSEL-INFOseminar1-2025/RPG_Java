@@ -44,10 +44,6 @@ public class HeroParty extends AbstractParty{
 		System.out.println();  //レイアウト調整のための改行
 	}
 	
-	public boolean isEscapeAll() {
-		return false;
-	}
-	
 	public void init() {
 		AbstractCharacter [] members = super.getMembers();
 		for(AbstractCharacter member: members){
