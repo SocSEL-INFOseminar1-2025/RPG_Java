@@ -7,7 +7,7 @@ import rpg.character.AbstractParty;
 
 public abstract class Monster extends AbstractCharacter{
 	public Monster(String name, int hp, int attack) {
-		super(name, attack, hp);
+		super(name, hp, attack);
 	}
 	
 	protected void command(AbstractParty ally, AbstractParty enemies) {
