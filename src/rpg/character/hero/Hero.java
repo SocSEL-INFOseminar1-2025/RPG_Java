@@ -9,7 +9,7 @@ public class Hero extends AbstractCharacter {
 	protected String job;
 	
 	public Hero(String name, int hp, int attack){
-		super(name, hp, attack);
+		super(name, 10 * hp, attack);
 		this.job = "普通のヒーロー";
 	}
 	
