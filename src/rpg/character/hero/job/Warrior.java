@@ -18,7 +18,7 @@ public class Warrior extends AbstractSuperHero{
 		}
 		Random random = new Random();
 		int randomAttack = random.nextInt(super.getAttack()) + super.getAttack();
-		if(targetCharacter.getName().equals("Dragon")) {  //ドラゴンに対して，攻撃に補正がかかる
+		if(targetCharacter.getName().contains("ドラゴン")) {  //ドラゴンに対して，攻撃に補正がかかる
 			randomAttack += 30;
 		}
 		int damage = targetCharacter.gotDamage(randomAttack);
