@@ -8,10 +8,10 @@ public abstract class AbstractParty {
 	}
 	
 	protected boolean isEscapeAll() {
-		boolean isEscapeAll = false;
+		boolean isEscapeAll = true;
 		for(AbstractCharacter member: this.members) {
 			if(!member.isEscaped()) {
-				isEscapeAll = true;
+				isEscapeAll = false;
 			}
 		}
 		return isEscapeAll;
